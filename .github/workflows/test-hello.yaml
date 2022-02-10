@@ -2,7 +2,7 @@
 name: Test Hello
 on: [pull_request]
 jobs:
-  always-pass:
+  test-hello:
     runs-on: ubuntu-latest
     steps:
       - run: bash ./hello_test.sh
