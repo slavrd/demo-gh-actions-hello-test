@@ -5,4 +5,7 @@ jobs:
   test-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: bash hello_test.sh
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Run tests
+        run: bash ./hello_test.sh
