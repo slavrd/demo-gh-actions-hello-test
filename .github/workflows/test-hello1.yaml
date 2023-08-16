@@ -1,8 +1,6 @@
 
 name: Test Hello
-on: 
-   - push
-   - pull_request
+on: push
 jobs:
   test-hello:
     runs-on: ubuntu-latest
